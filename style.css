@@ -1584,8 +1584,7 @@ i {
 
 .testimonial-section{
   background-color: #ffffff;
-  padding: 80px 0;
-  min-height: 100vh;
+  padding: 20px 0;
 }
 .testi-img .img-box{
   max-width: 360px;
@@ -1632,7 +1631,7 @@ i {
 }
 .testi-item h3,
 .testi-item p{
-  font-size: 18px;
+  font-size: 15px;
 }
 .testi-item h3{
   text-transform: capitalize;
@@ -1660,11 +1659,6 @@ i {
   }
 }
 
-.d-flex{
-  display: flex;
-  align-items: center;
-}
-
-.row{
-  display: flex;
+.carousel-item{
+  font-size: 14px;
 }
