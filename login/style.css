@@ -9,6 +9,39 @@
 body{
     min-height: 100vh;
 }
+.btn {
+    display: inline;
+    text-align: center;
+    padding: 0.6rem 1.2rem;
+    background-color: #fff;
+    border: 2px solid lightgreen;
+    border-radius: 10px;
+    color: #999;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+.headsec{
+    padding: 4px;
+    width: 100%;
+    margin-bottom: auto;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logintext{
+    margin-top: auto;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.brandname{
+    margin-top: auto;
+    font-size: 30px;
+    font-weight: 300;
+}
 
 .logincontainer{
     
@@ -40,11 +73,14 @@ background-position: center;
     padding: 30px;
 }
 
+
+
+
 .typeindividual{
     width: 100%;
     background-color: white;
     height: auto;
-    padding: 27px;
+    padding: 30px;
     border-radius: 20px;
 }
 
@@ -85,7 +121,7 @@ color: #1a0359 !important;
 .dds{
     width: 620px;
     text-align: center;
-        font-size: 24px;
+        font-size: 20px;
         line-height: 142%;
         margin-bottom: 20px;
         margin-left: auto;
@@ -111,12 +147,17 @@ color: #1a0359 !important;
 .typereccruit:hover{
 
     background-color: azure;
-    transition: 0.4;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transform: translateX(-6px);
+        transition: all .6s ease-out;
 }
 
 .typeindividual:hover{
     background-color: bisque;
     transition: 0.4;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: translateX(6px);
+    transition: all .6s ease-out;
 }
 
 a{
@@ -124,6 +165,10 @@ a{
 }
 
 @media only screen and (max-width: 1055px) {
+    .headsec{
+padding: 10px;
+    }
+    
     .login_type{
         width: 90%;
         margin: auto;
@@ -142,6 +187,14 @@ a{
 
 
   @media only screen and (max-width: 555px) {
+.headsec{
+    margin-bottom: 30px;
+}
+    .brandname{
+font-size: 20px;
+    }
+
+    .logintext span{display: none;}
     .logincontainer{
     
         display: flex;
@@ -165,13 +218,15 @@ a{
         gap: 28px;
     }
     .title_head {
-        font-size: 39px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: 30px;
         font-weight: 500;
         padding: 5px;
     }
     .headertext{
         align-items: center;
-        font-size: 23px;
+        font-size: 20px;
         font-weight: 500;
         line-height: 125%;
         margin: 0;
@@ -180,7 +235,7 @@ a{
     .dds {
         width: 100%;
         text-align: center;
-        font-size: 23px;
+        font-size: 19px;
         line-height: normal;
         margin-bottom: 11px;
         margin-left: auto;
