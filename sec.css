@@ -428,13 +428,17 @@ html {
   }
   
   .contact .btn-primary {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 10px !important;
   }
   
-  .contact .btn-primary ion-icon { --ionicon-stroke-width: 40px; }
+  .btn-group>.btn {
+    flex: none !important;
+  }
+
+  .contact .btn-primary ion-icon { --ionicon-stroke-width: 40px !important;  }
   
   .contact-list li:not(:last-child) { margin-bottom: 25px; }
   

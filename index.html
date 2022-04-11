@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>3D Navbar Animation</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-
+    <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="sec.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
@@ -27,7 +27,7 @@
           <div class="hamburger-menu">
             <div class="bar"></div>
           </div>
-          <div class="me"><button type="button" class="btn btn-outline-primary" style="margin: 0;">Login</button></div>
+          <div class="me"><button type="button" class="btn btn-outline-primary" style="margin: 0; display: inline-block;">Login</button></div>
         </div>
       </div>
 
@@ -675,6 +675,47 @@ Connect with people
   </div>
 </section>
 
+<section class="testimonial-section d-flex align-items-center">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 testi-img">
+        <div class="img-box">
+          <div class="circle"></div>
+          <div class="img-box-inner">
+            <img src="img/testimonial/1.png" alt="testi img">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div id="myCarousel" class="carousel slide" data-bs-interval="5000" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item testi-item active" data-color="#fb9c9a" data-img="img/testimonial/1.png">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nobis ratione, harum doloremque aspernatur aliquid quaerat dolores voluptates recusandae qui repellat illum, amet ipsa debitis fugiat commodi nemo suscipit ad!</p>
+              <h3>john doe 1 - <span>web developer</span></h3>
+            </div>
+            <div class="carousel-item testi-item" data-color="#fbd39a" data-img="img/testimonial/2.png">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nobis ratione, harum doloremque aspernatur aliquid quaerat dolores voluptates recusandae qui repellat illum, amet ipsa debitis fugiat commodi nemo suscipit ad!</p>
+              <h3>john doe 2 - <span>web developer</span></h3>
+            </div>
+            <div class="carousel-item testi-item" data-color="#9ab0fb" data-img="img/testimonial/3.png">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nobis ratione, harum doloremque aspernatur aliquid quaerat dolores voluptates recusandae qui repellat illum, amet ipsa debitis fugiat commodi nemo suscipit ad!</p>
+              <h3>john doe 3 - <span>web developer</span></h3>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <img src="img/icons/left-arrow.png" alt="prev">
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <img src="img/icons/right-arrow.png" alt="prev">
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
   <footer class="footer section">
     <div class="footer__container containered grid">
@@ -727,6 +768,8 @@ Connect with people
             </ul>
         </div>
 
+   
+
         <div class="footer__content">
             <h3 class="footer__title">
                 We accept all credit cards
@@ -753,6 +796,15 @@ Connect with people
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         <script type='text/javascript'>
           (function(I, L, T, i, c, k, s) {if(I.iticks) return;I.iticks = {host:c, settings:s, clientId:k, cdn:L, queue:[]};var h = T.head || T.documentElement;var e = T.createElement(i);var l = I.location;e.async = true;e.src = (L||c)+'/client/inject-v2.min.js';h.insertBefore(e, h.firstChild);I.iticks.call = function(a, b) {I.iticks.queue.push([a, b]);};})(window, 'https://cdn-v1.intelliticks.com/prod/common', document, 'script', 'https://app.intelliticks.com', 'RtvLZxsgyGvsCwvJq_c', {});
+      </script>
+      <script src="bootstrap.bundle.min.js"></script>
+      <script>
+          const myCarousel = document.getElementById('myCarousel')
+  myCarousel.addEventListener('slid.bs.carousel', function () {
+    const activeItem = this.querySelector(".active");
+    document.querySelector(".testi-img img").src = activeItem.getAttribute("data-img");
+    document.querySelector(".testi-img .circle").style.backgroundColor = activeItem.getAttribute("data-color");
+  })
       </script>
   </body>
 </html>
